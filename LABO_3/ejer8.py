@@ -14,5 +14,3 @@ def ejercicio8():
         print("Se ha encontrado la palabra:", palabra)
     else:
         print("No se ha encontrado la palabra:", palabra)
-
-ejercicio8()

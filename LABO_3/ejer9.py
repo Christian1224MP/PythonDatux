@@ -8,5 +8,5 @@ def ejercicio9():
     24×7. Es utilizado para la programación de interfaces gráficas y bases de datos,
     programación web tanto en el cliente como en el servidor (véase Django o Flask) y "testing"
     de aplicaciones'''
-    
+
     print(re.findall(r"Python", texto))
