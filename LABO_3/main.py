@@ -9,6 +9,7 @@ from ejer8 import ejercicio8
 from ejer9 import ejercicio9
 #ejercicio5()
 #ejercicio4()
+print('\tEjercicios\n')
 print("EJERCICIO1")
 ejercicio1()
 print("EJERCICIO2")
