@@ -10,4 +10,5 @@ def ejercicio7():
     print("El valor del dolar en la compra es: ",compra)
     print("El valor del dolar en la venta es: ",venta)
     print("La fecha del cambio actual del dolara es: ",fecha_actual)
+    print("Fin de ejecucion")
 

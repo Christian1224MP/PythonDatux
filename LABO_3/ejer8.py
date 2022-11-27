@@ -1,2 +1,2 @@
 def ejercicio8():
-    print("hola")
+    print("hello word")
