@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Ajustamos para que el header esté encima del contenido */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e32d2f;
+    color: white;
+}
+
+header img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* Ajustes del botón para desplegar la barra lateral */
+.toggle-btn {
+    font-size: 24px;
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Estilo de la barra lateral */
+.sidebar {
+    height: 100vh;
+    width: 60px;
+    background-color: #f8f9fa;
+    padding-top: 60px; /* Añadimos espacio para evitar que el botón esté encima del header */
+    position: fixed;
+    top: 50;
+    left: 100;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+    transition: width 0.3s ease;
+    z-index: 1; /* Asegura que esté debajo del header */
+}
+
+.sidebar.expanded {
+    width: 185px;
+}
+
+/* Opciones del menú */
+.menu-options a {
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
+    display: block;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-options a:hover {
+    background-color: #ddd;
+}
+
+
+/* Estilos del dropdown */
+.dropdown-container {
+    display: none; /* Ocultamos el menú por defecto */
+    flex-direction: column;
+    padding-left: 20px;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.dropdown.active .dropdown-container {
+    display: block; /* Mostramos el menú cuando la clase active está presente */
+}
+
+.dropdown-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    margin-left: auto;
+    transition: transform 0.3s ease; /* Añadimos una animación de rotación */
+}
+
+.dropdown.active .arrow {
+    transform: rotate(180deg); /* Giramos la flecha hacia arriba cuando está desplegado */
+}
+
+
+/* Estilo del contenido principal */
+.content {
+    margin-left: 60px;
+    padding: 20px;
+    width: calc(100% - 60px);
+    transition: margin-left 0.3s ease;
+    margin-top: 60px; /* Ajustamos para que el contenido no cubra el header */
+}
+
+.sidebar.expanded ~ .content {
+    margin-left: 260px;
+}

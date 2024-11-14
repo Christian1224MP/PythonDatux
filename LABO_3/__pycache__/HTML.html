@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Lateral</title>
+    <link rel="stylesheet" href="desing.css">
+</head>
+<body>
+    <!-- Ajuste del header -->
+    <header>
+        <img src="http://172.19.112.62/generador/assets/img/logo-claro.png" alt="">
+        <h2>Administracion Red Servicios Fijos</h2>      
+    </header>
+
+    <!-- Botón para desplegar la barra lateral -->
+    <div class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+        <!-- Opciones ocultas inicialmente -->
+        <div class="menu-options" style="display: none;">
+            <a href="#" onclick="showContent('inicio')"><span class="icon">🏠</span> Inicio</a>
+            <div><a href="#" onclick="showContent('estadisticas')"><span class="icon">📊</span> BO VIDEO</a></div>
+            <div><a href="#" onclick="showContent('notificaciones')"><span class="icon">🔔</span> BO DATOS</a></div>
+            <div><a href="#" onclick="showContent('contacto')"><span class="icon">📞</span> GUIA BO DATOS</a></div>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <div id="inicio" class="section">
+            <h1>Inicio</h1>
+            <p>Bienvenido a la página principal.</p>
+        </div>
+        <div id="Servicios" class="section" style="display: none;">
+            <h1>Servicios</h1>
+            <p>2 servicios.</p>
+        </div>
+        <div id="Opcion1" class="section" style="display: none;">
+            <h1>Opcion 1</h1>
+            <p>Contenido de la Opción 1.</p>
+        </div>
+        <div id="Opcion2" class="section" style="display: none;">
+            <h1>Opcion 2</h1>
+            <p>Contenido de la Opción 2.</p>
+        </div>
+        <div id="estadisticas" class="section" style="display: none;">
+            <h1>BO VIDEO</h1>
+            <p><div class="container">
+                <div class="card">
+                    <div class="card-body">
+            
+                        <table id="tabla" class="table table-border table-hover">
+                            <thead>
+                            <tr>
+                                <th>REPORTES_ACTUALES_RUTA</th>
+                                <th>ESTADO</th>
+                                <th>DESCRIPCION</th>               
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/EQjk8NchuzdKkglZXRK6ZN8B1YXXcPt0cGs5U3xHd3V9Vw?e=ynLhus" target="_blank">SeguimientodeComprasSpare</a></td>
+                                <td>ACTIVO</td>
+                                <td><p>Este enlace tien el reporte de seguimiuento de compras Spare de los HARMONIC</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/EdJOvApXXV1BpXOAOzs6gJ4BJTim3xgZpz20IpkDmgUHcA?e=01JDhN" target="_blank">REPORTE DE TICKETS TRIARA</a></td>
+                                <td>ACTIVO</td>
+                                <td><p>Revisión de los estados, fechas de apertura y cierre, equipo responsable, etc, de los tickets creados con Triara.</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/EdJOvApXXV1BpXOAOzs6gJ4BJTim3xgZpz20IpkDmgUHcA?e=01JDhN" target="_blank">REPORTE DE INCIDENCIAS DE IPTV Y CLARO VIDEO</a></td>
+                                <td>ACTIVO</td>
+                                <td><p>Revisión y historial de todos las Incidencias de IPTV y Claro </p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/Ed-x1n8IZ9xLqrmsIQUFkmABVQGtqheAFn_Z4iAB53tGDw?e=Mx6Id4" target="_blank">REPORTE DE SONDAS</a></td>
+                                <td>ACTIVO</td>
+                                <td><p>Revisión de estado de las sondas IPTV ubicados en diferentes sites a nivel nacional.</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/EdJnc_1ix0pHo6FxsJQO4ngBTZ02YWnuLvs1LexJnHZTog?e=56IsUc" target="_blank">REPORTE DE ESTADO DE APEX</a></td>
+                                <td>ACTIVO</td>
+                                <td><p>Revisión del estado actual de los Apex ubicados en los diferentes Hubs a nivel nacional.</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/EeDbQz9hzetEpTdmh3oWQMwBWoMcShp6XgYAd9tABCBNVw?e=70rgiH" target="_blank">REPORTE DE REVISIONES DIARIAS</a></td>
+                                <td>ACTIVO</td>
+                                <td><p>Revisión de las plataformas de manera diara y anotando las observaciones y acciones tomadas.</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> 
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+            
+                        <table id="tabla" class="table table-border table-hover">
+                            <thead>
+                            <tr>
+                                <th>REPORTES_ACTUALES_RUTA</th>
+                                <th>ESTADO</th>
+                                <th>DESCRIPCION</th>               
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/EZl9QJ6WlsdHrtemAPEp1ikBEetkzdNfV-jRyC7IzBbB6w?e=zAKMad" target="_blank">REPORTE DE GRILLA DE CANALES (IPTV-HFC)</a></td>
+                                <td>COMPLETO</td>
+                                <td><p>Información de la grilla de canales activos en servicio de IPTV y HFC.</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/EYUwoPcv2X9Mi9t1epZtBL8BFXcfLeFfbmL9YFknwWdb8w?e=x5k1C8" target="_blank">REPORTE DE CANALES POR MPTS</a></td>
+                                <td>COMPLETO</td>
+                                <td><p>Información de canales ubicados en cada MPTS (CAP).</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/EcmpShYhTYFFoFAV-Ucn0RcBlSOthW-s2GkSZbkSlqucxA?e=WotKQ1" target="_blank">REPORTE DE CANALES POR PACKAGERS</a></td>
+                                <td>PENDIENTE</td>
+                                <td><p>Información de canales ubicados en cada packager.</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/ESPKt2e4BKlBnz39RJKFQxEB5tQyVm7UTwKvfZQ6Ds6xmQ?e=rqenfV" target="_blank">REPORTE DE QAMS POR CANALES (HFC)</a></td>
+                                <td>COMPLETO</td>
+                                <td><p>Ubicación de canales y frecuencia en las QAMS de los APEX (HFC).</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/EU1GTUkzdRZIkE4I8fh_dToBifZgXvM2KUbTRPyv9ITMdw?e=w2of1M" target="_blank">REPORTE DE CANALES POR ENCODERS (IPTV-HFC)</a></td>
+                                <td>PENDIENTE</td>
+                                <td><p>Información de canales ubicados en cada encoder (TITAN).</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/EaP9XmUGXcpBmowRwRtr7NwB5-VlgVi5a6bEhbtuHySMNw?e=Ct4Nem" target="_blank">REPORTE DE CANALES POR ANTENA (HEADEND)</a></td>
+                                <td>COMPLETO</td>
+                                <td><p>Información de que canales y cuantas antenas se tienen operativos (HEADEND).</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/Ea1ybVsPw3hOm_ibWlWpC6ABp8gtc-VBKie9ygYle-_cnQ?e=scGLUr" target="_blank">REPORTE DE IRD DE CANALES (HEADEND)</a></td>
+                                <td>COMPLETO</td>
+                                <td><p>Información de la posición de los IRD y recorrido para los canales (HEADEND).</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/EaRjZr8XdvZNtgS98qF1pQ8B1W55J9gSO6iPQamShJo28g?e=anbdnS" target="_blank">REPORTE DE CANALES POR FIBRA</a></td>
+                                <td>PENDIENTE</td>
+                                <td><p>Información de canales que recibimos por fibra optica.</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </p>
+        </div>
+        <div id="notificaciones" class="section" style="display: none;">
+            <h1>BO DATOS</h1>
+            <p><div class="container"> 
+                <div class="card">
+                    <div class="card-body">
+            
+                        <table id="tabla" class="table table-border table-hover">
+                            <thead>
+                            <tr>
+                                <th class="marka1">VOZ Y VIDEO</th>
+                                <th class="marka1">ESTADO</th>
+                                <th class="marka1">DESCRIPCION</th>               
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:x:/g/personal/c27035_claro_com_pe/ERtyrhkrUBhMmqQrpzTAVikBFCE6oSo0yxwi5dYevoBCLw?e=pyrtzT" target="_blank">DESPLAZAMIENTO BRIGADAS PEXT NIVEL NACIONAL</a></td>
+                                <td>COMPLETO</td>
+                                <td><p>Tiempo de desplazamiento de bigradas pext a nivel nacional , incluye prioridad CORE.</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div></p>
+        </div>
+        <div id="contacto" class="section" style="display: none;">
+            <h1>GUIA BO DATOS</h1>
+            <p><div class="container"> 
+                <div class="card">
+                    <div class="card-body">
+            
+                        <table id="tabla" class="table table-border table-hover">
+                            <thead>
+                            <tr>
+                                <th class="marka1">VOZ Y VIDEO</th>
+                                <th class="marka1">DESCRIPCION</th>               
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="https://amovperu-my.sharepoint.com/:w:/g/personal/c27035_claro_com_pe/Ea3JIwKNMYxElDCGji0lo1UByP9_wpjtQbQzjGcx1Ebypw?e=G5yZH4" target="_blank">VISUALIZACION DE ALERTA DE AKAMAI</a></td>                          
+                                <td><p>Guia para visualizar alertas en AKAMAI.</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
